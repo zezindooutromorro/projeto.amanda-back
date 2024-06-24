@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#alfabeto {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#alfabeto h2 {
+  text-align: center;
+}
+
+#alfabeto p {
+  text-align: justify;
+}
+
+#alfabeto div {
+  margin-bottom: 10px;
+}
+
+#alfabeto div span {
+  font-weight: bold;
+}
+
+#alfabeto div p {
+  margin: 5px 0;
+}
