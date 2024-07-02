@@ -67,6 +67,10 @@ const alfabeto = {
   document.addEventListener('DOMContentLoaded', function () {
     mostrarAlfabeto();
   });
+  function mostrarLetra(letra) {
+    document.getElementById('letter-display').textContent = letra;
+}
+
 
   
 
