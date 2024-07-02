@@ -1,43 +1,30 @@
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #ff0000;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
-header {
-  background-color: #007bff;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+#alphabet-buttons {
+  margin: 20px 0;
 }
 
-#alfabeto {
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: white;
+.letter-button {
+  display: inline-block;
+  margin: 10px;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#alfabeto h2 {
-  text-align: center;
+.letter-button:hover {
+  background-color: #45a049;
 }
 
-#alfabeto p {
-  text-align: justify;
-}
-
-#alfabeto div {
-  margin-bottom: 10px;
-}
-
-#alfabeto div span {
-  font-weight: bold;
-}
-
-#alfabeto div p {
-  margin: 5px 0;
+#letter-display {
+  margin-top: 20px;
+  font-size: 48px;
 }
