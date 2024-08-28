@@ -33,50 +33,61 @@ function mostrarLetra(texto) {
 }
 
 console.log('JavaScript carregado corretamente.');
+
 function iniciarJogo() {
-  var questions = [
-      { letter: 'A', word: '𝓪𝓫𝓪𝓬𝓪𝔁𝓲' },
-      { letter: 'B', word: '𝓑𝓸𝓵𝓪' },
-      { letter: 'C', word: '𝓒𝓪𝓬𝓱𝓸𝓻𝓻𝓸' },
-      { letter: 'D', word: '𝓓𝓪𝓭𝓸 '},
-      { letter: 'E', word: '𝓔𝓼𝓬𝓸𝓵𝓪' },
-      { letter: 'F', word: '𝓕𝓲𝓰𝓾𝓻𝓲𝓷𝓱𝓪' },
-      { letter: 'G', word: '𝓖𝓸𝓵' },
-      { letter: 'H', word: '𝓗𝓲𝓼𝓽ó𝓻𝓲𝓪' },
-      { letter: 'I', word: '𝓘𝓰𝓻𝓮𝓳𝓪' },
-      { letter: 'J', word: '𝓙𝓸𝓰𝓸' },
-      { letter: 'K', word: '𝓚𝓲𝔀𝓲' },
-      { letter: 'L', word: '𝓛𝓲𝓿𝓻𝓸' },
-      { letter: 'M', word: '𝓜𝓪𝓬𝓪𝓬𝓸' },
-      { letter: 'N', word: '𝓝ú𝓶𝓮𝓻𝓸' },
-      { letter: 'O', word: '𝓸𝓵𝓱𝓸' },
-      { letter: 'P', word: '𝓟𝓪𝓻𝓺𝓾𝓮' },
-      { letter: 'Q', word: '𝓠𝓾𝓮𝓲𝓳𝓸' },
-      { letter: 'R', word: '𝓡𝓪𝓽𝓸' },
-      { letter: 'S', word: '𝓢𝓪𝓽𝓸' },
-      { letter: 'T', word: '𝓣𝓻𝓪𝓫𝓪𝓵𝓱𝓸' },
-      { letter: 'U', word: '𝓤𝓿𝓪' },
-      { letter: 'V', word: '𝓥𝓲𝓭𝓪' },
-      { letter: 'W', word: '𝓦𝓱𝓲𝓼𝓴𝔂' },
-      { letter: 'X', word: '𝓧í𝓬𝓪𝓻𝓪' },
-      { letter: 'Y', word: '𝓨𝓸𝓰𝓪' },
-      { letter: 'Z', word: '𝓩𝓮𝓫𝓻𝓪' },
+    var questions = [
+        { letter: 'A', word: '𝓪𝓫𝓪𝓬𝓪𝔁𝓲' },
+        { letter: 'B', word: '𝓑𝓸𝓵𝓪' },
+        { letter: 'C', word: '𝓒𝓪𝓬𝓱𝓸𝓻𝓻𝓸' },
+        { letter: 'D', word: '𝓓𝓪𝓭𝓸' },
+        { letter: 'E', word: '𝓔𝓼𝓬𝓸𝓵𝓪' },
+        { letter: 'F', word: '𝓕𝓲𝓰𝓾𝓻𝓲𝓷𝓱𝓪' },
+        { letter: 'G', word: '𝓖𝓸𝓵' },
+        { letter: 'H', word: '𝓗𝓲𝓼𝓽ó𝓻𝓲𝓪' },
+        { letter: 'I', word: '𝓘𝓰𝓻𝓮𝓳𝓪' },
+        { letter: 'J', word: '𝓙𝓸𝓰𝓸' },
+        { letter: 'K', word: '𝓚𝓲𝔀𝓲' },
+        { letter: 'L', word: '𝓛𝓲𝓿𝓻𝓸' },
+        { letter: 'M', word: '𝓜𝓪𝓬𝓪𝓬𝓸' },
+        { letter: 'N', word: '𝓝ú𝓶𝓮𝓻𝓸' },
+        { letter: 'O', word: '𝓸𝓵𝓱𝓸' },
+        { letter: 'P', word: '𝓟𝓪𝓻𝓾𝓮' },
+        { letter: 'Q', word: '𝓠𝓾𝓮𝓲𝓳𝓸' },
+        { letter: 'R', word: '𝓡𝓪𝓽𝓸' },
+        { letter: 'S', word: '𝓢𝓪𝓽𝓸' },
+        { letter: 'T', word: '𝓣𝓻𝓪𝓫𝓪𝓵𝓱𝓸' },
+        { letter: 'U', word: '𝓤𝓿𝓪' },
+        { letter: 'V', word: '𝓥𝓲𝓭𝓪' },
+        { letter: 'W', word: '𝓦𝓱𝓲𝓼𝓴𝔂' },
+        { letter: 'X', word: '𝓧í𝓬𝓪𝓻𝓪' },
+        { letter: 'Y', word: '𝓨𝓸𝓰𝓪' },
+        { letter: 'Z', word: '𝓩𝓮𝓫𝓻𝓪' }
+    ];
 
+    // Seleciona uma pergunta aleatória
+    var currentQuestion = questions[Math.floor(Math.random() * questions.length)];
 
-            // Adicione mais perguntas aqui
-  ];
+    // Exibe a pergunta
+    console.log(`Qual a palavra para a letra ${currentQuestion.letter}?`);
+    
+    // Cria opções de resposta (incluindo a correta e outras aleatórias)
+    var options = questions.map(q => q.word);
+    var optionsHtml = options.map(option => 
+        `<button onclick="verificarResposta('${option}', '${currentQuestion.word}')">${option}</button>`
+    ).join('');
 
-  var currentQuestion = questions[Math.floor(Math.random() * questions.length)];
-  document.getElementById('question').innerText = `Qual a palavra para a letra ${currentQuestion.letter}?`;
-  
-  var optionsHtml = questions.map(q => `<button onclick="verificarResposta('${q.word}', '${currentQuestion.word}')">${q.word}</button>`).join('');
-  document.getElementById('options').innerHTML = optionsHtml;
+    // Adiciona a pergunta e as opções ao documento (para testes, você pode usar console.log)
+    document.getElementById('question').innerHTML = `Qual a palavra para a letra ${currentQuestion.letter}?`;
+    document.getElementById('options').innerHTML = optionsHtml;
 }
 
 function verificarResposta(selectedWord, correctWord) {
-  if (selectedWord === correctWord) {
-      alert('Correto!');
-  } else {
-      alert('Tente novamente!');
-  }
+    if (selectedWord === correctWord) {
+        alert('Correto!');
+    } else {
+        alert('Tente novamente!');
+    }
 }
+
+// Inicia o jogo ao carregar a página
+iniciarJogo();
